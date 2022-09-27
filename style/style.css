@@ -94,7 +94,7 @@ body {
 .attribution { 
     font-size: 11px; text-align: center;
     color: var(--softViolet);
-    top: 73%
+    top: calc(100% + 2em)
 }
 .attribution a { 
     color: hsl(228, 45%, 44%);
@@ -182,7 +182,7 @@ body {
     .stats .stats-img img {
         grid-column: 2;
         border-radius: 0 .5em .5em 0;
-        min-height: 100%;
+        height: auto;
         max-width: 100%;
     }
 
