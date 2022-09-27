@@ -21,7 +21,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/Stats Preview Card Component.png)
+![Screenshot](/Stats Preview Card Component.jpg)
 
 ### Links
 
