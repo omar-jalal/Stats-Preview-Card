@@ -230,12 +230,19 @@ main {
     }
 
     .stats .stats-info h1 {
+        margin: 0;
         margin-bottom: .2em;
         font-size: 2em;
     }
 
     .stats .stats-info p {
         margin: 0;
+        margin-top: 1em;
+    }
+
+    .stats .stats-info .stats-numbers {
+        margin: 0;
+        margin-top: 3em;
     }
 }
 
