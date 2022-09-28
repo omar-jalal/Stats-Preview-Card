@@ -141,7 +141,7 @@ main {
 
 @media(max-width: 59.75rem) {
     .stats {
-        min-height: 90%;
+        max-height: 90%;
         min-width: 90%;
         overflow: hidden;
         grid-template-columns: repeat(2, 1fr);
@@ -171,6 +171,10 @@ main {
     .stats .stats-info p {
         margin: 0;
     }
+
+    .stats .stats-info .stats-numbers {
+        margin: 3em 0;
+    }
 }
 
 /* Mobile Landscape Layout End */
@@ -178,7 +182,7 @@ main {
 
 /* Mobile Layout Start */
 
-@media(max-width: 23.4375rem) {
+@media(max-width: 25.875rem) {
     .stats {
         min-width: 80%;
         max-height: 90%;
