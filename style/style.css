@@ -173,7 +173,7 @@ main {
     }
 
     .stats .stats-info .stats-numbers {
-        margin: 3em 0;
+        margin: 3em 0 !important;
     }
 }
 
@@ -182,7 +182,7 @@ main {
 
 /* Mobile Layout Start */
 
-@media(max-width: 25.875rem) {
+@media(max-width: 38.5rem) {
     .stats {
         min-width: 80%;
         max-height: 90%;
