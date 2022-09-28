@@ -26,13 +26,13 @@ body {
     background-color: var(--veryDarkBlue);
     font-family: 'Inter', sans-serif;
     font-weight: 400, 700;
-    height: 100vh;
     overflow: hidden;
 }
 
 /* Global end */
 
 .stats {
+    max-height: 60vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -133,25 +133,20 @@ body {
 
 @media(max-width: 59.75rem) {
     .stats {
-        max-height: 90%;
+        min-height: 70%;
         min-width: 90%;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
         gap: 0;
     }
 
-    .stats .stats-img img {
-        max-height: 80%;
-        overflow: hidden;
-        max-width: 100%;
+    .stats .stats-img {
         max-height: 100%;
     }
 
     .stats .stats-img img {
-        max-height: 80%;
-        overflow: hidden;
-        max-width: 100%;
         max-height: 100%;
+        min-width: 100%;
     }
 
     .stats .stats-info h1 {
@@ -175,7 +170,7 @@ body {
 @media(max-width: 38.5rem) {
     .stats {
         grid-template-columns: 1fr !important;
-        grid-template-rows: repeat(2, 1fr) !important;
+        grid-template-rows: minmax(0, 1fr) auto !important;
         gap: 0;
         text-align: center;
     }
@@ -202,8 +197,8 @@ body {
     
     .stats .stats-img img {
         border-radius: .5em .5em 0 0;
-        max-width: 100%;
-        max-height: 100%;
+        min-width: 100%;
+        min-height: 100%;
     }
 
     .stats .stats-img .overlay {
