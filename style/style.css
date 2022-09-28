@@ -26,13 +26,11 @@ body {
     background-color: var(--veryDarkBlue);
     font-family: 'Inter', sans-serif;
     font-weight: 400, 700;
-    overflow: hidden;
 }
 
 /* Global end */
 
 .stats {
-    max-height: 60vh;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -54,8 +52,8 @@ body {
     margin: auto;
     object-fit: cover;
     object-position: center 10%;
-    max-width: 100%;
-    min-height: 100%;
+    width: 100%;
+    height: 100%;
     grid-column: 2;
     border-radius: 0 .5em .5em 0;
 }
@@ -133,20 +131,21 @@ body {
 
 @media(max-width: 59.75rem) {
     .stats {
-        min-height: 70%;
-        min-width: 90%;
+        min-height: 90vh;
+        min-width: 90vw;
+        margin: 1em auto;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
         gap: 0;
     }
 
-    .stats .stats-img {
-        max-height: 100%;
+    .stats .stats-img  {
+        height: 100%;
     }
 
     .stats .stats-img img {
         max-height: 100%;
-        min-width: 100%;
+        max-width: 100%;
     }
 
     .stats .stats-info h1 {
@@ -169,8 +168,10 @@ body {
 
 @media(max-width: 38.5rem) {
     .stats {
-        grid-template-columns: 1fr !important;
-        grid-template-rows: minmax(0, 1fr) auto !important;
+        min-height: 100vh;
+        margin: 1em auto;
+        grid-template-columns: 1fr ;
+        grid-template-rows: minmax(0, 1fr) auto;
         gap: 0;
         text-align: center;
     }
