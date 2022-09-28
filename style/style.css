@@ -140,7 +140,7 @@ main {
 
 /* Mobile Layout Start */
 
-@media(max-width: 59.74rem) {
+@media(max-width: 59.75rem) {
     .stats {
         min-width: 80%;
         max-height: 90%;
@@ -205,7 +205,7 @@ main {
 
 /* Mobile Landscape Layout Start */
 
-@media(min-width: 59.75rem) {
+@media(max-width: 90rem) {
     .stats {
         max-height: 90%;
         min-width: 90%;
