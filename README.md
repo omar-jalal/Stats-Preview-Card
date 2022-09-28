@@ -21,7 +21,13 @@ Users should be able to:
 
 ### Screenshot
 
-![Screenshot](/Stats Preview Card Component.jpg)
+#### Desktop Layout Screenshot
+
+![Screenshot](/desktop-screenshot.jpg)
+
+#### Mobile Layout Screenshot
+
+![Screenshot](/mobile-screenshot.jpg)
 
 ### Links
 

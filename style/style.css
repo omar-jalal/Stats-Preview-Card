@@ -17,8 +17,6 @@
     --slightlyTransparentWhite: hsla(0, 0%, 100%, 0.75);
     --littleSlightlyTransparent: hsla(0, 0%, 100%, 0.6);
 
-    /* Colors End */
-
     font-size: 15px;
 }
 
@@ -28,7 +26,7 @@ body {
     font-weight: 400, 700;
 }
 
-/* Global end */
+/* Design Start */
 
 .stats {
     position: absolute;
@@ -127,48 +125,12 @@ body {
     color: hsl(228, 45%, 44%);
 }
 
-/* Mobile Landscape Layout Start */
-
-@media(max-width: 59.75rem) {
-    .stats {
-        min-height: 90vh;
-        min-width: 90vw;
-        margin: 1em auto;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
-        gap: 0;
-    }
-
-    .stats .stats-img  {
-        height: 100%;
-    }
-
-    .stats .stats-img img {
-        max-height: 100%;
-        max-width: 100%;
-    }
-
-    .stats .stats-info h1 {
-        font-size: 2em;
-    }
-
-    .stats .stats-info p {
-        margin: 0;
-    }
-
-    .stats .stats-numbers {
-        margin-top: 2em;
-    }
-}
-
-/* Mobile Landscape Layout End */
-
-
 /* Mobile Layout Start */
 
 @media(max-width: 38.5rem) {
     .stats {
         min-height: 100vh;
+        min-width: 85vw;
         margin: 1em auto;
         grid-template-columns: 1fr ;
         grid-template-rows: minmax(0, 1fr) auto;
@@ -220,4 +182,36 @@ body {
 
 }
 
-/* Mobile Layout End */
+/* Mobile Landscape Layout Start */
+
+@media (min-width: 38.51rem) and (max-width: 90rem) {
+    .stats {
+        min-height: 90vh;
+        min-width: 90vw;
+        margin: 1em auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(auto-fill, minmax(1fr, 2fr));
+        gap: 0;
+    }
+
+    .stats .stats-img  {
+        height: 100%;
+    }
+
+    .stats .stats-img img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .stats .stats-info h1 {
+        font-size: 2em;
+    }
+
+    .stats .stats-info p {
+        margin: 0;
+    }
+
+    .stats .stats-numbers {
+        margin-top: 2em;
+    }
+}
